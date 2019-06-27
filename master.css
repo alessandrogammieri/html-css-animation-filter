@@ -10,7 +10,7 @@
 .ex-2-square {
   transition: width 2s;
 }
-.ex-2-square:hover {
+.ex-2-square:active {
   width: 100%;
 }
 
@@ -71,4 +71,122 @@
   filter: blur(5px) grayscale(100%);
   border-radius: 10%;
   transform: scale(.5);
+}
+
+/* Esercizio 10 */
+.ex-10-icon {
+  animation-name: gira;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes gira {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Esercizio 11 */
+.ex-11-icon:hover {
+  animation-name: semigiro;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes semigiro {
+  0% {
+    transform: rotate(0);
+  }
+  90% {
+    transform: rotate(270deg);
+  }
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: animatop;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes animatop {
+  0% {
+    left: 10%;
+  }
+  50% {
+    left: calc(100% - 60px);
+  }
+  75% {
+    left: 0;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: animabottom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes animabottom {
+  0% {
+    right: 20%;
+  }
+  50% {
+    right: calc(100% - 60px);
+  }
+  75% {
+    right: 0;
+  }
+}
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: tot-animatop;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes tot-animatop {
+  0% {
+    left: 10%;
+    top: -10px;
+  }
+  30% {
+    left: calc(100% - 30px);
+    top: -10px;
+  }
+  45% {
+    left: calc(100% - 30px);
+    top: 100%;
+  }
+  75% {
+    left: 0;
+    top: 100%;
+  }
+  90% {
+    left: -15px;
+    top: -10px;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: tot-animabottom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes tot-animabottom {
+  0% {
+    right: 20%;
+    bottom: -10px;
+  }
+  30% {
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+  45% {
+    right: calc(100% - 30px);
+    bottom: 100%;
+  }
+  75% {
+    right: 0;
+    bottom: 100%;
+  }
+  90% {
+    right: -15px;
+    bottom: -10px;
+  }
 }
